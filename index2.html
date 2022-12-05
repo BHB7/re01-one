@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/index2.css">
+    <link rel="stylesheet" href="/1.0.9/iconfont.css"> <!-- 引入字体图标 -->
+    <link rel="shortcut icon" href="/img/bitbug_favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>碑海北-2022</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    </head>
+  <body>
+    <!-- 导航栏nav开始 -->
+    <div class="nav">
+      <div class="nav-box">
+        <ul>
+          <li class="sy"><a href="index.html">回到初始页面</a></li>
+          <li class="box-a"><a href="form.html" target="value">登录</a></li>
+          <li class="box-a">
+            <a
+              href="view-source:http://127.0.0.1:5500/shangpin.html"
+              target="value"
+              >HTML/CSS</a
+            >
+          </li>
+          <li class="box-a">
+            <a
+              href="https://space.bilibili.com/1902829825?spm_id_from=333.999.0.0"
+              target="value"
+              ><p class="sy-p">碑海北</p></a
+            >
+          </li>
+          <div class="sy-img">
+            <a
+              href="https://space.bilibili.com/1902829825?spm_id_from=333.999.0.0"
+              target="value"
+              ><h4>Hi</h4>
+              <img src="./img/tx.JPG"
+            /></a>
+          </div>
+        </ul>
+      </div>
+      <!-- 二级菜单 -->
+      <div class="sub-nav">
+        <div class="sub-nav1">
+          <h3 class="sub-nav-h">联系</h3>
+          <div class="sub-nav2">
+            <!-- <div class="box3"> -->
+
+            <ul class="menu">
+              <a href=""><img src="./img/wx.png" alt="" /></a>
+              <li>
+                <a href="tencent://message/?uin=1812287263&Site=&Menu=yes"
+                  >QQ</a
+                >
+              </li>
+            </ul>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- 二级菜单结束 -->
+    </div>
+    <!-- 导航栏nav结束 -->
+    <!-- 横幅开始 -->
+    <div class="bootm">
+      <div class="bootm-wbox">
+        <h3 class="bootm-text">001</h3>
+        
+      </div>
+      <div class="bootm-box2">
+        <h6 class="bootm-text">002-天气</h6>
+        <iframe
+          name="weather_inc"
+          class="weather"
+          src="http://i.tianqi.com/index.php?c=code&id=7"
+          style="border: solid 1px gainsboro"
+          frameborder="0"
+          marginwidth="0"
+          marginheight="0"
+          scrolling="no"
+        >
+        </iframe>
+      </div>
+      <div class="bootm-box3">
+        <h6 class="bootm-text">003-播放器</h6>
+        <!-- 容器 -->
+        <div class="container">
+          <!-- 播放器盒子 -->
+          <div class="musicbox">
+            <!-- 图片歌曲信息 -->
+            <div class="music-detail">
+              <!-- 图片 -->
+              <div class="music-img"></div>
+              <!-- 歌曲信息 -->
+              <div class="music-info"></div>
+            </div>
+            <!-- 相关操作 -->
+            <div class="music-control">
+              <!-- 进度条 -->
+              <div class="runningbox">
+                <div class="start">00:00</div>
+                <div class="running" onclick="changeProgress()">
+                  <div class="running1"></div>
+                </div>
+                <div class="end">00:00</div>
+              </div>
+              <div class="control">
+                <!-- 停止 -->
+                <span id="replay" class="Hui-iconfont" onclick="replayMusic()"
+                  >&#xe68f;</span
+                >
+                <!-- 上一曲 -->
+                <span id="pre" class="Hui-iconfont" onclick="preMusic()"
+                  >&#xe6db;</span
+                >
+                <!-- 播放 -->
+                <span id="pause" class="Hui-iconfont" onclick="pauseMusic()"
+                  >&#xe6e5;</span
+                >
+                <!-- 下一曲 -->
+                <span id="next" class="Hui-iconfont" onclick="nextMusic()"
+                  >&#xe6e3;</span
+                >
+                <!-- 音量 -->
+                <div class="vulme">
+                  <span id="mute" class="Hui-iconfont" onclick="muteMusic()"
+                    >&#xe62f;</span
+                  >
+                  <div class="vulmeBar">
+                    <div class="vulmeBar1" onclick="changeVulme()"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bootm-box4">
+        <h3 class="bootm-text">004</h3>
+      </div>
+      <div class="middle"></div>
+    </div>
+    <!-- 横幅结束 -->
+    <!-- 版权区开始 -->
+    <div class="box-banquan">
+      <div class="banquanbox">
+        <div class="box-banquanbox">
+          <h3>&copy;碑海北-2022</h3>
+          <p>7Z/SHE</p>
+        </div>
+      </div>
+    </div>
+    <!-- 版权区结束 -->
+  </body>
+</html>
